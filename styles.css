@@ -8,6 +8,14 @@ header {
     background: no-repeat lightgrey url(/images/cliff_ocean.jpg);
     background-size: 100%;
 }
+#activities header {
+    background: no-repeat lightgrey url(/images/runfly.jpg);
+    background-size: 100%;
+}
+#contact header {
+    background: no-repeat lightgrey url(/images/cliff_rock.jpg);
+    background-size: 100%;
+}
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 700px;
@@ -133,3 +141,10 @@ footer #nondisclaimer .social .fa-instagram{
     background: #125688;
     color: white;
 }
+
+/* Activities Page */
+
+
+
+
+/* Contact Page */
