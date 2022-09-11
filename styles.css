@@ -181,6 +181,10 @@ td:first-child {
 
 
 /* Contact Page */
+form {
+    margin-top: 20px;
+}
+
 fieldset {
     border-color: #9ed034;
     padding: 20px;
@@ -233,6 +237,6 @@ legend {
     color: #fff;
     font-weight: bold;
     /* position: absolute; */
-    margin-left: 43%;
+    margin: 0 43%;
     /* margin-left: 700px; */
 }
