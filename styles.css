@@ -16,6 +16,11 @@ header {
     background: no-repeat lightgrey url(/images/cliff_rock.jpg);
     background-size: 100%;
 }
+#cliffs header {
+    background: no-repeat lightgrey url(/images/forest_cliff.jpg);
+    background-size: 100%;
+}
+
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 700px;
