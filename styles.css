@@ -245,3 +245,12 @@ legend {
     margin: 0 43%;
     /* margin-left: 700px; */
 }
+
+/* Cliffs Page */
+#cliff-list-images {
+    text-decoration: none;
+}
+
+#cliff-list-images .cliff-img .caption{
+    font-weight: bold;
+}
