@@ -248,9 +248,33 @@ legend {
 
 /* Cliffs Page */
 #cliff-list-images {
-    text-decoration: none;
+    /* text-decoration: none; */
+    /* margin: 0 auto; */
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#cliff-list-images .cliff-img {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+#cliff-list-images .cliff-img img {
+    /* text-decoration: none; */
+    width: 600px;
 }
 
 #cliff-list-images .cliff-img .caption{
     font-weight: bold;
+    position: absolute;
+    background-color: #852b1b;
+    color: white;
+    width: 600px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
 }
