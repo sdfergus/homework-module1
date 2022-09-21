@@ -118,9 +118,11 @@
             if (utchr > 12) {
                 utchr -= 12;  //Convert military time to standard
             }
-
+            
             timeDiff = utchr - hr; //Calculate time difference
             adjTimeDiff = Math.abs(timeDiff); //Convert time difference to always be positive
+            
+            console.log('HOUR: ', hr, 'UTCHR:', utchr, adjTimeDiff);
 
             if(adjTimeDiff === 4) {
                 timeZone = "ET";
@@ -143,7 +145,6 @@
 
         //Run time data function every 1 second
         setInterval(currentTime, 1000); //setting timer   
-
 
         // Partners list
         var fileNames = [];
