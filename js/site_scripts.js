@@ -16,3 +16,12 @@ for(var i = 0; i < 6; i++) {
 }
 
 document.getElementById("partners").innerHTML = imageList.join(" ");
+
+/* ------------ RANDOM CODES --------------- */ 
+
+    //Create variables to store generated codes and the type of characters we want to show as codes
+    var code = ''; //to store generated codes and initialize to empty value
+    var getCode = ''; //to store entered code
+    var btnvalue; //for button boolean value 
+    //create variable to hold the type of characters we want to show as codes
+    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
