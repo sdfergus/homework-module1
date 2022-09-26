@@ -24,6 +24,6 @@ document.getElementById("partners").innerHTML = imageList.join(" ");
     var getCode = ''; //to store entered code
     var btnvalue; //for button boolean value 
     //create variable to hold the type of characters we want to show as codes
-    // var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
+    //var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
 
     // export { code, str };
