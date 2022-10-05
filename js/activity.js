@@ -4,6 +4,7 @@ $(document).ready(function() {
     var currText;
     var $displaySelected = $('#displaySelected');
     var $result = $('#result');
+    var $tHead = $('table thead tr th'); 
 
     $('table tbody tr td').not('td:first-child').hover(function() {
         currText = $(this).text();
@@ -14,6 +15,7 @@ $(document).ready(function() {
         }
     }).click(function() {
         var currCellColor = $(this).css('backgroundColor');
+        var index = $(this).index();
         currText = $(this).text();
         if(currCellColor !== selectedColor && currText !== 'Not Available') {
             $(this).css({
@@ -28,7 +30,7 @@ $(document).ready(function() {
                 visibility:'visible', 
                 marginTop: '2em', 
             })
-            $result.append('<p>'+currText+'</p>');
+            $result.append('<p>'+currText+ ' at ' + $tHead.eq(index).text() + '</p>');
 
         } else {
             $(this).css({
@@ -37,7 +39,7 @@ $(document).ready(function() {
                 fontWeight: 'normal'
             })
             
-            console.log('FOUND:', $result.find('p').find(currText));
+            // console.log('FOUND:', $result.find('p').find(currText));
             // $result.find('p').find(currText).remove(this);
             // $result.remove($result.find('p').find(currText));
 
