@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: content-box
 }
 
 /* Header */
@@ -15,8 +15,9 @@ header {
 }
 .main-header {
     background-color:rgb(255, 255, 255, 0.8) ;
-    width: 645px;
+    /* width: 645px; */
     /* width: fit-content; */
+    /* width: 80%; */
     margin: 2em auto 0 auto;
     min-height: 100px;
     /* height: 100px; */
@@ -33,6 +34,7 @@ header {
     /* margin-left: 160px; */
     font-weight: 400;
 }
+
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
@@ -81,7 +83,9 @@ section {
 }
 section #partners {  
     /* width: 1200px; */
-    padding: 2em 0 2em 0;
+    /* padding: 2em 0 2em 0; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -158,11 +162,11 @@ footer #nondisclaimer .social .fa-instagram {
   }
   
   .custom-toggler.navbar-toggler {
-    border-color: rgb(220,220,220);
+    border-color: rgb(202, 204, 202);
   } 
 
   .navbar-toggler {
-    margin-right: 1em;
+    margin-right: .5em;
   }
 
   .navbar {
@@ -178,34 +182,80 @@ footer #nondisclaimer .social .fa-instagram {
   }
 
   /* main */
-
   .container h1 {
     text-align: center;
   }
 
-  .col {
-    border: 1px solid rgba(202, 204, 202, 0.6);
+  .col-sm-2, .col-md-5 {
+    border: 1px solid #888;
     margin: .5em;
     padding: 2em 1em;
-}
+  }
+
+  /* footer */
+
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
+    #navbarContent .navbar-nav {
+        right: .2em;
+    }
+
+    main {
+        margin: 1em 0;    
+        padding: 1em 2em 3em;
+    }
     
-  }
+    .container h1 {
+        font-size: 2.2em;
+    }
+  } */
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- 
+@media only screen and (max-width: 600px) {
+    /* .container .row {
+        display: block;
+    } */
+
+
+    #navbarContent .navbar-nav {
+        right: .2em;
+    }
+
+    main {
+        margin: 1em 0;    
+        padding: 1em 2em 3em;
+    }
+    
+    .container h1 {
+        font-size: 2.2em;
+    }
+
+    footer #nondisclaimer .social {
+        background-color: white;
+        width: 100%;
+        margin-right: 0;
+        padding: 40px 0;
+        display: flex;
+        justify-content: center
+    }
+
+    section #partners .partner {
+        margin: 0 5rem;
+    }
+
+    .container .row {
+        /* margin: 0 10px; */
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and under) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container h1 {
-        font-size: 2.1em;
+        font-size: 2.4em;
         /* white-space:nowrap; */
     }
 
@@ -218,31 +268,41 @@ footer #nondisclaimer .social .fa-instagram {
         text-align: center;
         float: none;
         font-size: 0.9em;
-      }
-      footer #nondisclaimer .social {
+    }
+
+    footer #nondisclaimer .social {
         padding: 2.5em 0;
         margin: 0;
         text-align: center;
         float: none;
         background-color: white;
-      }
+    }
 
-      #navbarContent .navbar-nav {
+    #navbarContent {
         background-color: rgb(255, 255, 255);
         position: absolute;
         width: 200px;
-        /* width: fit-content; */
         right: 1.7em;
-        margin-top: .3em;
+        top: 7em;
+        /* margin-bottom: 5em; */
+    }
+
+    #navbarContent .navbar-nav {
+        /* background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 200px; */
+        /* width: fit-content; */
+        /* right: 1.7em;
+        margin-top: .3em; */
     }
     
     #navbarContent .navbar-nav .nav-item {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
-      }
+    }    
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 992px and under) */
+@media only screen and (max-width: 992px) {
     .logo img {
         position: relative;
         /* bottom: 8px; */
@@ -258,7 +318,7 @@ footer #nondisclaimer .social .fa-instagram {
     border-bottom: 1px solid rgba(202, 204, 202, 0.6);
     }
     main {
-        padding: 3em 1em 3em 1em;
+        padding: 3em 1em;
         margin: 0;
     }
     #home .main-col-content {
@@ -267,13 +327,14 @@ footer #nondisclaimer .social .fa-instagram {
         margin-top: 1em;
     }
 
-    #nondisclaimer {
-        display: flex;
-        justify-content: space-around;
+    .main-header {
+        width: 80%;
     }
 }
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  /* @media only screen and (min-width: 1200px) {
-
-  } */
+  @media only screen and (min-width: 992px) {
+    .main-header {
+        width: 645px;
+    }
+  }
