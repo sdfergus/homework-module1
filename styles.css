@@ -59,7 +59,7 @@ header {
 /* Main */
 main {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 100px;
+    margin: 50px;
 }
 main h1 {
     color: #9ed034;
@@ -348,10 +348,34 @@ form .randomcode #codes {
     color: #125688;
 }
 
+#cliff-info .col {
+    /* max-width: 46%;
+    margin: 0 10px;  */
+} 
 
 /* Media Queries */
 
-/* Large devices (laptops/desktops, 992px and under) */
+/* X-Small devices (laptops/desktops, 992px and under) */
+@media only screen and (max-width: 576px) {
+    #cliff-info {
+        /* display: flex; */
+        /* width: 100%; */
+        flex-direction: column;
+    }
+}
+
+/* Small devices (laptops/desktops, 768px and under) */
+@media only screen and (max-width: 768px) {
+    /* #cliff-info {
+        margin: 0;
+    }
+    
+    #cliff-info .col {
+        margin: 5px 0;
+    } */
+}
+
+/* Medium devices (laptops/desktops, 992px and under) */
 @media only screen and (max-width: 991px) {
     #navbarContent {
         background-color: rgb(255, 255, 255);
@@ -369,4 +393,9 @@ form .randomcode #codes {
     #navbarContent .navbar-nav .nav-item a {
         font-weight: 500;
     }
+
+    /* #cliff-info .col {
+        max-width: 46%;
+        margin: 0 10px;
+    } */
 }
