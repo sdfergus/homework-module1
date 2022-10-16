@@ -4,47 +4,38 @@ header {
     min-height: 400px;
     padding-top: 3em;
 }
-#home header{
+#home header {
     background: no-repeat lightgrey url(/images/cliff_ocean.jpg);
-    background-size: 100%;
+    background-size: cover;
+    /* background-size: 100%; */
+    /* background-position: top center; */
 }
 #activities header {
     background: no-repeat lightgrey url(/images/runfly.jpg);
-    background-size: 100%;
+    background-size: cover;
+    /* background-size: 100%; */
 }
 #contact header {
     background: no-repeat lightgrey url(/images/cliff_rock.jpg);
-    background-size: 100%;
+    background-size: cover;
+    /* background-size: 100%; */
 }
 #cliffs header {
     background: no-repeat lightgrey url(/images/forest_cliff.jpg);
-    background-size: 100%;
-}
-
-.main-header {
-    background-color: rgb(255, 255, 255, 0.8);
-    width: 700px;
-    margin: 2em auto 0 auto;
-    min-height: 100px;
-    height: 100px;
-}
-.main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
+    background-size: cover;
+    /* background-size: 100%; */
 }
 
 /* Navigation */
-.main-menu{
-    margin-left: 227px;
-    font-weight: 400;
+#nav-container {
+    width: 690px;
 }
+
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
     float: left;
-    padding: 0 20px;
+    padding: 0 26px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
     line-height: 100px;
     text-transform: uppercase;
@@ -62,7 +53,7 @@ header {
     border: none;
 }
 .main-menu ul li.active a {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Main */
@@ -355,4 +346,27 @@ form .randomcode #codes {
 
 #clock {
     color: #125688;
+}
+
+
+/* Media Queries */
+
+/* Large devices (laptops/desktops, 992px and under) */
+@media only screen and (max-width: 991px) {
+    #navbarContent {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        width: 300px;
+        /* width: fit-content; */
+        right: 1.7em;
+        top: 8em;
+    }
+    
+    #navbarContent .navbar-nav .nav-item {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+    } 
+    
+    #navbarContent .navbar-nav .nav-item a {
+        font-weight: 500;
+    }
 }
