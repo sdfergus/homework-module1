@@ -23,7 +23,6 @@ header {
 #cliffs header {
     background: no-repeat lightgrey url(/images/forest_cliff.jpg);
     background-size: cover;
-    /* background-size: 100%; */
 }
 
 /* ---------------------------------- Home Page ---------------------------------- */
@@ -31,6 +30,12 @@ header {
 /* Navigation */
 #nav-container {
     width: 690px;
+    /* position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 15px; */
 }
 
 .main-menu ul li {
@@ -159,6 +164,7 @@ footer #nondisclaimer .social .fa-instagram{
 
 
 /* ---------------------------------- Cliffs Page ---------------------------------- */
+
 #cliff-list-images {
     /* text-decoration: none; */
     /* margin: 0 auto; */
