@@ -448,7 +448,13 @@ form .randomcode #codes {
 /* X-Small devices (laptops/desktops, 992px and under) */
 @media only screen and (max-width: 575px) {
 
+    /* ________________ General ________________ */
+    #nav-container {
+        width: auto;
+    }
+
     /* ________________ Home Page ________________ */
+    
     #cliff-info, footer #nondisclaimer {
         flex-direction: column;
     }
