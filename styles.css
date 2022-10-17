@@ -26,6 +26,8 @@ header {
     /* background-size: 100%; */
 }
 
+/* ---------------------------------- Home Page ---------------------------------- */
+
 /* Navigation */
 #nav-container {
     width: 690px;
@@ -54,6 +56,20 @@ header {
 }
 .main-menu ul li.active a {
     color: #fff !important;
+}
+
+#timeofday {
+    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 75%, rgba(0,212,255,1) 100%); 
+    height: 25px;
+    text-align: center;
+    padding: 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+    font-weight: 600;
+}
+
+#clock {
+    color: #125688;
 }
 
 /* Main */
@@ -139,7 +155,53 @@ footer #nondisclaimer .social .fa-instagram{
     color: white;
 }
 
-/* Activities Page */
+
+
+
+/* ---------------------------------- Cliffs Page ---------------------------------- */
+#cliff-list-images {
+    /* text-decoration: none; */
+    /* margin: 0 auto; */
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#cliff-list-images .cliff-img {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+}
+
+#cliff-list-images .cliff-img img {
+    /* text-decoration: none; */
+    width: 600px;
+}
+
+#cliff-list-images .cliff-img .caption{
+    font-weight: bold;
+    position: absolute;
+    background-color: #852b1b;
+    color: white;
+    width: 600px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+#cliff-info .col {
+    /* max-width: 46%;
+    margin: 0 10px;  */
+} 
+
+
+
+
+
+/* ---------------------------------- Activities Page ---------------------------------- */
 table {
     width: 1000px;
     margin: 4em auto 0 auto;
@@ -204,7 +266,10 @@ td:first-child {
     width: 200px;
 }
 
-/* Contact Page */
+
+
+
+/* ---------------------------------- Contact Page ---------------------------------- */
 form {
     margin-top: 20px;
 }
@@ -301,63 +366,15 @@ form .randomcode #codes {
     padding-right: 50%;
 }
 
-/* Cliffs Page */
-#cliff-list-images {
-    /* text-decoration: none; */
-    /* margin: 0 auto; */
-    padding-left: 0;
-    margin-top: 50px;
-    margin-bottom: 0;
-    text-align: center;
-}
 
-#cliff-list-images .cliff-img {
-    display: inline-block;
-    position: relative;
-    margin: 20px;
-}
 
-#cliff-list-images .cliff-img img {
-    /* text-decoration: none; */
-    width: 600px;
-}
 
-#cliff-list-images .cliff-img .caption{
-    font-weight: bold;
-    position: absolute;
-    background-color: #852b1b;
-    color: white;
-    width: 600px;
-    height: 30px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10px;
-}
-
-/* Home Page */
-#timeofday {
-    background: linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 75%, rgba(0,212,255,1) 100%); 
-    height: 25px;
-    text-align: center;
-    padding: 25px 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #3a3a3a;
-    font-weight: 600;
-}
-
-#clock {
-    color: #125688;
-}
-
-#cliff-info .col {
-    /* max-width: 46%;
-    margin: 0 10px;  */
-} 
-
-/* Media Queries */
+/* ---------------------------------- Media Queries ---------------------------------- */
 
 /* Medium devices (laptops/desktops, 992px and under) */
 @media only screen and (max-width: 991px) {
+
+    /* ________________ Home Page ________________ */
     #navbarContent {
         background-color: rgb(255, 255, 255);
         position: absolute;
@@ -383,10 +400,25 @@ form .randomcode #codes {
     footer #nondisclaimer #social-div {
         background-color: white;
     }
+
+
+    /* ________________ Cliffs Page ________________ */
+
+
+
+
+    /* ________________ Activities Page ________________ */
+
+
+
+
+    /* ________________ Contact Page ________________ */
 }
 
 /* Small devices (laptops/desktops, 768px and under) */
 @media only screen and (max-width: 767px) {
+
+    /* ________________ Home Page ________________ */
     section #partners .partner {
         margin: 0 60px;
         margin-bottom: 20px;
@@ -401,10 +433,22 @@ form .randomcode #codes {
         float: none;
         text-align: center;
     }
+
+
+
+    /* ________________ Cliffs Page ________________ */
+
+
+    /* ________________ Activities Page ________________ */
+
+
+    /* ________________ Contact Page ________________ */
 }
 
 /* X-Small devices (laptops/desktops, 992px and under) */
 @media only screen and (max-width: 575px) {
+
+    /* ________________ Home Page ________________ */
     #cliff-info, footer #nondisclaimer {
         flex-direction: column;
     }
@@ -413,4 +457,13 @@ form .randomcode #codes {
         margin: 0 125px;
         margin-bottom: 20px;
     }
+
+
+    /* ________________ Cliffs Page ________________ */
+
+
+    /* ________________ Activities Page ________________ */
+
+
+    /* ________________ Contact Page ________________ */
 }
