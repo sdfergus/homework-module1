@@ -38,6 +38,10 @@ header {
     top: 15px; */
 }
 
+/* #nav-container .nav {
+    width: 690px;
+} */
+
 .main-menu ul li {
     list-style-type: none;
     display: inline-block;
