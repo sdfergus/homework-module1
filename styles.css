@@ -1,12 +1,13 @@
 /* Header */
 header {
     width: 100%;
-    min-height: 400px;
-    padding-top: 3em;
+    min-height: 275px;
+    /* min-height: 400px; */
+    /* padding-top: 3em; */
 }
-#home header {
-    background: no-repeat lightgrey url(/images/cliff_ocean.jpg);
-    background-size: cover;
+#home {
+    background: no-repeat white url(/images/cliff_ocean.jpg);
+    background-size: 100% 400px;
     /* background-size: 100%; */
     /* background-position: top center; */
 }
@@ -38,6 +39,10 @@ header {
     top: 15px; */
 }
 
+.navbar-dark, #navbarContent {
+    background-color: rgba(38, 41, 61, 0.7) !important;
+}
+
 /* #nav-container .nav {
     width: 690px;
 } */
@@ -54,7 +59,8 @@ header {
 }
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    /* color: #888; */
+    color: rgb(255, 255, 255) !important;
 }
 .main-menu ul li a:hover {
     color: #9ed034;
