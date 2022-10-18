@@ -280,20 +280,56 @@ td:first-child {
 
 
 /* ---------------------------------- Contact Page ---------------------------------- */
-form {
+#contact form {
     margin-top: 20px;
 }
 
-fieldset {
-    border-color: #9ed034;
-    padding: 2em;
+#contact form {
+    border: 1px solid #9ed034;
+    padding: 1em;
 }
 
-legend {
+#contact legend {
     text-transform: uppercase;
-    color: #4977d1;
+    color: #4977d1 !important;
     font-weight: bold;
+    font-size: 1.2em !important;
 }
+
+#contact .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    opacity: 1; /* Firefox */
+
+}
+
+#contact .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#contact .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Overriding styles */
+/* ::-webkit-input-placeholder {
+    font-size: 13px!important;
+ } */
+ 
+ /* Firefox 18- */
+ /* :-moz-placeholder { 
+       font-size: 13px!important;
+ } */
+
+ /* Firefox 19+ */
+ /* ::-moz-placeholder {  
+       font-size: 13px!important;
+ } */
 
 .textbox label, .commentbox label {
     display: block;
@@ -323,15 +359,30 @@ legend {
    height: 250px;
 }
 
-form .button input {
-    width: 8em;
-    height: 2em;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* background-color: #4977d1; */
+#contact .btn {
+    width: 7em;
+    font-size: 14px;
+    padding: 5px 18px;
+    text-transform: uppercase;
+    background-color: #4977d1;
     color: #fff;
     border: none;
-    margin-top: 1.2em;
+    margin-top: 1.2em;  
+}
+
+#contact .justify-content-center {
+    margin-right: 80px;
+}
+
+form .button input {
+    /* width: 8em;
+    height: 2em;
+    font-size: 1.2em;
+    font-weight: bold; */
+    /* background-color: #4977d1; */
+    /* color: #fff;
+    border: none;
+    margin-top: 1.2em; */
 }
 
 form .button {
@@ -356,7 +407,7 @@ form .randomcode {
 }
 
 form .randomcode input {
-    height: 20px;
+    height: 25px;
     width: 16%;
     /* margin-right: 15px; */
 }
