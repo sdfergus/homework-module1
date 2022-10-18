@@ -11,19 +11,20 @@ header {
     /* background-size: 100%; */
     /* background-position: top center; */
 }
+#cliffs {
+    background: no-repeat white url(/images/forest_cliff.jpg);
+    background-size: 100% 400px;
+    /* background-size: cover; */
+}
 #activities header {
-    background: no-repeat lightgrey url(/images/runfly.jpg);
+    background: no-repeat white url(/images/runfly.jpg);
     background-size: cover;
     /* background-size: 100%; */
 }
 #contact header {
-    background: no-repeat lightgrey url(/images/cliff_rock.jpg);
+    background: no-repeat white url(/images/cliff_rock.jpg);
     background-size: cover;
     /* background-size: 100%; */
-}
-#cliffs header {
-    background: no-repeat lightgrey url(/images/forest_cliff.jpg);
-    background-size: cover;
 }
 
 /* ---------------------------------- Home Page ---------------------------------- */
@@ -39,7 +40,7 @@ header {
     top: 15px; */
 }
 
-.navbar-dark, #navbarContent {
+.navbar-dark {
     background-color: rgba(38, 41, 61, 0.7) !important;
 }
 
@@ -191,20 +192,19 @@ footer #nondisclaimer .social .fa-instagram{
 }
 
 #cliff-list-images .cliff-img img {
-    /* text-decoration: none; */
-    width: 600px;
+    /* width: 400px; */
 }
 
 #cliff-list-images .cliff-img .caption{
-    font-weight: bold;
-    position: absolute;
+    font-weight: 500;
+    font-size: 18px;
+    /* position: absolute; */
     background-color: #852b1b;
     color: white;
-    width: 600px;
-    height: 30px;
+    /* width: 400px; */
     margin: 0 auto;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 
@@ -449,7 +449,8 @@ form .randomcode #codes {
 
     /* ________________ Home Page ________________ */
     #navbarContent {
-        background-color: rgb(255, 255, 255);
+        /* background-color: rgb(255, 255, 255); */
+        background-color: rgba(38, 41, 61, 0.7);
         position: absolute;
         width: 300px;
         /* width: fit-content; */
@@ -476,7 +477,9 @@ form .randomcode #codes {
 
 
     /* ________________ Cliffs Page ________________ */
-
+    #cliff-list-images .cliff-img .caption{
+        font-size: 25px !important;
+    }
 
 
 
@@ -507,15 +510,10 @@ form .randomcode #codes {
         text-align: center;
     }
 
-
-
-    /* ________________ Cliffs Page ________________ */
-
-
-    /* ________________ Activities Page ________________ */
-
-
-    /* ________________ Contact Page ________________ */
+    /* Cliffs page  */
+    #cliff-img-container {
+        /* max-width: 570px; */
+    }
 }
 
 /* X-Small devices (laptops/desktops, 992px and under) */
@@ -536,13 +534,4 @@ form .randomcode #codes {
         margin: 0 125px;
         margin-bottom: 20px;
     }
-
-
-    /* ________________ Cliffs Page ________________ */
-
-
-    /* ________________ Activities Page ________________ */
-
-
-    /* ________________ Contact Page ________________ */
 }
