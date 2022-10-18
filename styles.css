@@ -16,9 +16,10 @@ header {
     background-size: 100% 400px;
     /* background-size: cover; */
 }
-#activities header {
+#activities {
     background: no-repeat white url(/images/runfly.jpg);
-    background-size: cover;
+    background-size: 100% 400px;
+    /* background-size: cover; */
     /* background-size: 100%; */
 }
 #contact header {
