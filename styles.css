@@ -22,9 +22,10 @@ header {
     /* background-size: cover; */
     /* background-size: 100%; */
 }
-#contact header {
+#contact {
     background: no-repeat white url(/images/cliff_rock.jpg);
-    background-size: cover;
+    background-size: 100% 400px;
+    /* background-size: cover; */
     /* background-size: 100%; */
 }
 
